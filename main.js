@@ -2,10 +2,12 @@
 const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
-// Your JavaScript code goes here!
+let modal = document.querySelector('.hidden')
 
+const clickForLike = document.getElementsByClassName("like-glyph")
 
-
+clickForLike.addEventListener('click', (mimicServerCall))
+.then()
 
 //------------------------------------------------------------------------------
 // Don't change the code below: this function mocks the server response
@@ -23,3 +25,20 @@ function mimicServerCall(url="http://mimicServer.example.com", config={}) {
     }, 300);
   });
 }
+
+
+
+// .catch((function (error){
+
+//   // get the modal class
+//   // display error by removing hidden class
+//   // use time out to hide the error after 3 seconds
+
+//   let modal = document.getElementById("modal");
+
+//   modal.className = ("") ;
+//   modal.innerText = Error;
+//   setTimeout (() => (modal.className = (".hidden"), 3000))
+
+// }))
+
